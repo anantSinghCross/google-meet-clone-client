@@ -3,6 +3,11 @@ import VideoPlayer from './components/VideoPlayer'
 import Options from './components/Options'
 import Notifications from './components/Notifications'
 
+// TODO: Features to work on
+// ✅ 1. video conferencing
+// 🔳 2. audio communication
+// 🔳 3. chat functionality
+
 function App() {
   return (
     <div className='flex flex-col'>
