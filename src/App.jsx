@@ -4,9 +4,10 @@ import Options from './components/Options'
 import Notifications from './components/Notifications'
 
 // TODO: Features to work on
-// ✅ 1. video conferencing
-// ✅ 2. audio communication (additional: 🔳feature to mute/unmute, 🔳video on/off)
-// 🔳 3. chat functionality
+// ✅ 1. Video conferencing
+// ✅ 2. Audio communication (additional: 🔳feature to mute/unmute, 🔳video on/off)
+// 🔳 3. Chat functionality
+// 🔳 4. Improve UI
 
 function App() {
   return (
