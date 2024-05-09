@@ -5,7 +5,7 @@ import Notifications from './components/Notifications'
 
 // TODO: Features to work on
 // ✅ 1. video conferencing
-// 🔳 2. audio communication
+// ✅ 2. audio communication (additional: 🔳feature to mute/unmute, 🔳video on/off)
 // 🔳 3. chat functionality
 
 function App() {
