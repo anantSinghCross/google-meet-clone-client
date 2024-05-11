@@ -1,10 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { SocketContext } from "../Context";
 
 function VideoPlayer() {
   const { me, name, callAccepted, myVideo, userVideo, callEnded, stream, call } =
     useContext(SocketContext);
-
+  useEffect(() => {
+    if(myVideo && myVideo.current){
+      myVideo.current.srcObject = stream;
+    }
+  }, [stream])
   return (
     <div className="flex justify-center gap-3">
       <div className="flex flex-col gap-1">
