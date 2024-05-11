@@ -15,13 +15,17 @@ Please see [anantSinghCross/google-meet-clone-server](https://github.com/anantSi
 * `simple-peer` - For establishing P2P connections and streaming of data.
 * `tailwindcss` - For styling.
 
-###  Step To Follow For Live Demo
+***
+
+###  Steps To Follow For Live Demo
 
 1. Visit [Google Meet Clone](https://google-meet-clone-client.onrender.com).
 2. Open another client. *If you want to test it out on the same device you'll need to open another tab in the same browser*.
 3. Copy the socket ID of the other user in the form and click on **Call**.
 4. Let the other user accept your call from the notification on the bottom right of the screen.
 5. Both the video feeds and the chat interface will be visible.
+
+***
 
 ### Architecture (Server and Client)
 
@@ -30,5 +34,6 @@ A bare-bones express node server that helps in the handshake required to initiat
 
 #### Client
 I've tried to create the below diagram of the system to demonstrate the handshake process.
+![image](https://github.com/anantSinghCross/google-meet-clone-client/assets/38243636/0588118e-aa73-42ca-9a9b-f2b8a3925063)
 
 And the below diagram demonstrates the P2P connection (after the handshake) that is used by the Peers to stream data.
