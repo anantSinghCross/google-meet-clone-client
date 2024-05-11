@@ -4,7 +4,7 @@ A rudimentary clone of Google Meet built on React and Node which uses P2P connec
 
 Please see [anantSinghCross/google-meet-clone-server](https://github.com/anantSinghCross/google-meet-clone-server) for the server implementation.
 ***
-**The live [demo](https://google-meet-clone-client.onrender.com) is hosted on [Render](https://render.com/).**
+**The live [demo](https://google-meet-clone-client.onrender.com) is hosted on [Render](https://render.com/). If you don't see the ID please wait for a few seconds for the server to spin up.**
 
 ***
 ### Libraries Used
