@@ -9,7 +9,10 @@ function Chat() {
   const [message, setMessage] = useState("");
   const scrollDummyDiv = useRef(null);
   useEffect(() => {
-    scrollDummyDiv.current.scrollIntoView({ behavior: "smooth" });
+    if(scrollDummyDiv.current){
+      scrollDummyDiv.current.scrollIntoView({ behavior: "smooth" });
+
+    }
   })
   const { msgs, callAccepted, callEnded, sendMessage } = useContext(SocketContext);
   const messageList =

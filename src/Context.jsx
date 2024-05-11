@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import Peer from "simple-peer";
 
 const SocketContext = createContext();
-const socket = io("http://localhost:8090");
+const socket = io("https://google-meet-clone-server.onrender.com/");
 const ContextProvider = ({ children }) => {
   const [msgs, setMsgs] = useState([]); // [... {data: 'Hi', isOwnMessage: true/false, id} ] Lets the <Chat/> know whether the message is our or is received from the other peer
   const [callAccepted, setCallAccepted] = useState(false);
