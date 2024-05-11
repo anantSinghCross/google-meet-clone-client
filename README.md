@@ -34,6 +34,8 @@ A bare-bones express node server that helps in the handshake required to initiat
 
 #### Client
 I've tried to create the below diagram of the system to demonstrate the handshake process.
-![image](https://github.com/anantSinghCross/google-meet-clone-client/assets/38243636/0588118e-aa73-42ca-9a9b-f2b8a3925063)
+![handshake](https://github.com/anantSinghCross/google-meet-clone-client/assets/38243636/0588118e-aa73-42ca-9a9b-f2b8a3925063)
 
 And the below diagram demonstrates the P2P connection (after the handshake) that is used by the Peers to stream data.
+![p2p](https://github.com/anantSinghCross/google-meet-clone-client/assets/38243636/ff0081a8-2197-4f14-ba46-b5c5eda3e952)
+
