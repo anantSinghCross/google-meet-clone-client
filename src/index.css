@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+video {
+  transform: rotateY(180deg)
+}

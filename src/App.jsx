@@ -2,6 +2,7 @@ import Header from './components/Header'
 import VideoPlayer from './components/VideoPlayer'
 import Options from './components/Options'
 import Notifications from './components/Notifications'
+import Chat from './components/Chat'
 
 // TODO: Features to work on
 // ✅ 1. Video conferencing
@@ -18,6 +19,7 @@ function App() {
         <VideoPlayer/>
         <Options/>
       </div>
+        <Chat/>
     </div>
   )
 }
