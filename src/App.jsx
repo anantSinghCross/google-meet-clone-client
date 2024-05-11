@@ -4,12 +4,6 @@ import Options from './components/Options'
 import Notifications from './components/Notifications'
 import Chat from './components/Chat'
 
-// TODO: Features to work on
-// ✅ 1. Video conferencing
-// ✅ 2. Audio communication (additional: 🔳feature to mute/unmute, 🔳video on/off)
-// 🔳 3. Chat functionality
-// 🔳 4. Improve UI
-
 function App() {
   return (
     <div className='flex flex-col'>
