@@ -37,5 +37,4 @@ I've tried to create the below diagram of the system to demonstrate the handshak
 ![handshake](https://github.com/anantSinghCross/google-meet-clone-client/assets/38243636/0588118e-aa73-42ca-9a9b-f2b8a3925063)
 
 And the below diagram demonstrates the P2P connection (after the handshake) that is used by the Peers to stream data.
-![p2p](https://github.com/anantSinghCross/google-meet-clone-client/assets/38243636/ff0081a8-2197-4f14-ba46-b5c5eda3e952)
-
+![p2p](https://github.com/anantSinghCross/google-meet-clone-client/assets/38243636/50e5c401-36df-438f-9010-91f52c7d088d)
