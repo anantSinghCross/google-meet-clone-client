@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { SocketContext } from "../Context";
+import { BiSolidPhoneCall, BiSolidPhoneOff } from "react-icons/bi";
 
 function Options() {
   const { me, callAccepted, name, setName, callEnded, leaveCall, callUser } =
@@ -10,37 +11,43 @@ function Options() {
     <div className="flex gap-2 mt-2 justify-center">
       {callAccepted && !callEnded ? (
         <button
-          className="px-3 py-1 self-end w-max bg-red-500 text-white rounded-md shadow font-semibold text-sm"
+          className="btn-red-grad"
           onClick={leaveCall}
         >
-          End Call
+          <span className="flex gap-2 justify-center items-center">
+            <BiSolidPhoneOff />
+            End Call
+          </span>
         </button>
       ) : (
         <>
-        <div className="flex flex-col w-full max-w-xl gap-2 mt-2 justify-center">
+          <div className="flex flex-col w-full max-w-md gap-2 mt-2 justify-center">
             <input
-              className="px-2 py-1 border rounded-md outline-blue-400"
+              className="px-4 py-2 border rounded-md outline-blue-400 shadow-inner"
               placeholder="Your Name"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-          <div className="flex gap-2">
-            <input
-              className="px-2 w-full py-1 border rounded-md outline-blue-400"
-              placeholder="User ID to call"
-              type="text"
-              value={idToCall}
-              onChange={(e) => setIdToCall(e.target.value)}
-            />
-            <button
-              className="px-3 py-1 bg-blue-500 text-white rounded-md shadow font-semibold text-sm"
-              onClick={() => callUser(idToCall)}
-            >
-              Call
-            </button>
+            <div className="flex gap-2">
+              <input
+                className="px-4 w-full py-2 border rounded-md outline-blue-400 shadow-inner"
+                placeholder="User ID to call"
+                type="text"
+                value={idToCall}
+                onChange={(e) => setIdToCall(e.target.value)}
+              />
+              <button
+                className="btn-blue-grad"
+                onClick={() => callUser(idToCall)}
+              >
+                <span className="flex gap-2 justify-center items-center">
+                  <BiSolidPhoneCall />
+                  Call
+                </span>
+              </button>
+            </div>
           </div>
-        </div>
         </>
       )}
     </div>

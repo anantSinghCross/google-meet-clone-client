@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { SocketContext } from "../Context";
+import { BiSolidPhoneIncoming } from "react-icons/bi";
 
 const Notifications = () => {
   const { answerCall, call, callAccepted } = useContext(SocketContext);
@@ -7,13 +8,11 @@ const Notifications = () => {
   return (
     <>
       {call.isReceivingCall && !callAccepted && (
-        <div className="fixed shadow-lg bottom-4 right-4 flex gap-4 p-3 border border-blue-200 rounded-md bg-blue-50 justify-center w-max">
-          <h3> {call.name} is calling</h3>
-          <button
-            className=" w-max h-max px-3 py-1 bg-blue-500 text-white rounded-md shadow font-semibold text-sm"
-            onClick={answerCall}
-          >
-            Answer Call
+        <div className="fixed border-2 border-indigo-400 shadow-md shadow-indigo-100 bottom-4 right-4 flex gap-4 p-3 rounded-xl justify-center w-max items-center">
+          <BiSolidPhoneIncoming className=" fill-indigo-500" size={25}/>
+          <h3> {call.name === "" ? "Unknown person" : call.name} is calling</h3>
+          <button className="btn-blue-grad" onClick={answerCall}>
+            Accept
           </button>
         </div>
       )}
